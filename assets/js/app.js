@@ -860,12 +860,12 @@
             <div class="bg-slate-900/60 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-800 printable-section-box">
               <div class="flex justify-between items-center font-bold text-white dark:text-white print:text-black mb-0.5">
                 <span class="text-cyan-300 dark:text-cyan-300 print:text-black font-bold">
-                  ${isTh ? 'ผลงานโปรเจกต์: Thailand Petroleum Price Tracker & Spatial Analytics Platform' : 'Key Project: Thailand Petroleum Price Tracker & Spatial Analytics Platform'}
+                  ${isTh ? 'ผลงานโปรเจกต์: Thailand Spatial GIS Web Dashboards (Petroleum & Population Intelligence)' : 'Key Projects: Thailand Spatial GIS Web Dashboards (Petroleum & Population Intelligence)'}
                 </span>
                 <span class="text-slate-400 print:text-slate-800 text-[10px] shrink-0">Full-Stack BI & GIS</span>
               </div>
               <p class="text-slate-300 dark:text-slate-300 print:text-black leading-normal text-[10.5px]">
-                Engineered interactive spatial web dashboard (PHP, MySQL, Leaflet.js, GeoJSON, Chart.js) tracking 8 retail fuel types across 77 Thai provinces with 30-day price spread KPI metrics and distributor comparisons (PTT vs. Bangchak).
+                Engineered interactive spatial web analytics dashboards (PHP, Leaflet.js, GeoJSON, Chart.js) tracking 8 retail fuel types and 77-province nationwide population & demographic census data with dynamic KPI cards, regional drill-downs, and responsive choropleth heatmaps.
               </p>
             </div>
 
