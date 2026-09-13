@@ -21,12 +21,12 @@ const PORTFOLIO_DATA = {
       en: "Data Science & Analytics Intern"
     },
     statusBadge: {
-      th: "พร้อมเริ่มฝึกงาน (23 พ.ย. 69 – 12 มี.ค. 70 หรือทันที | อย่างน้อย 3 เดือน)",
-      en: "Available for Internship (Nov 23, 2026 – Mar 12, 2027 or Immediately | Min 3 Months)"
+      th: "พร้อมเริ่มฝึกงาน (23 พ.ย. 69 – 12 มี.ค. 70 หรือทันที | อย่างน้อย 4 เดือน)",
+      en: "Available for Internship (Nov 23, 2026 – Mar 12, 2027 or Immediately | Min 4 Months)"
     },
     internshipPeriod: {
-      th: "23 พฤศจิกายน 2569 – 12 มีนาคม 2570 หรือ ทันที (ระยะเวลาอย่างน้อย 3 เดือน)",
-      en: "Nov 23, 2026 – Mar 12, 2027 or Immediately (At least 3 months)"
+      th: "23 พฤศจิกายน 2569 – 12 มีนาคม 2570 หรือ ทันที (ระยะเวลาอย่างน้อย 4 เดือน)",
+      en: "Nov 23, 2026 – Mar 12, 2027 or Immediately (At least 4 months)"
     },
     internshipFormat: {
       th: "On-site / Hybrid (กรุงเทพฯ & ปริมณฑล หรือ จังหวัดขอนแก่น)",
@@ -74,7 +74,7 @@ const PORTFOLIO_DATA = {
         subtext: { th: "ENGiHack 2026 (BDI & THackle)", en: "ENGiHack 2026 Energy Hackathon" }
       },
       {
-        value: "4+",
+        value: "5+",
         label: { th: "โปรเจกต์ Data & AI", en: "Data & AI Projects" },
         subtext: { th: "ML, BI, Edge AI & Antigravity", en: "ML, BI, Edge AI & Antigravity" }
       }
@@ -570,7 +570,7 @@ const PORTFOLIO_DATA = {
             { th: "สร้าง Interactive Spatial Map แสดงราคาน้ำมัน 8 ประเภทรายจังหวัดทั่วประเทศ", en: "Engineered interactive spatial choropleth maps displaying retail prices for 8 fuel types across 77 provinces." },
             { th: "ทำ GeoJSON Boundary Integration เพื่อจำแนกส่วนต่างราคาน้ำมันตามเขตภูมิภาค", en: "Integrated provincial GeoJSON boundary geometries calculating 30-day regional price spreads." }
           ],
-          relatedProjects: ["Thailand Petroleum Price TRACKER"]
+          relatedProjects: ["Thailand Petroleum Price TRACKER", "Thailand Population Dashboard"]
         },
         {
           id: "chart-js",
@@ -898,6 +898,48 @@ const PORTFOLIO_DATA = {
         {
           label: { th: "📂 คลังโปรเจกต์ GitHub (Source Code)", en: "📂 Project Repository" },
           url: "https://github.com/thanchanok-tan-in",
+          icon: "code"
+        }
+      ]
+    },
+    {
+      id: "thailand-population-dashboard",
+      category: "bi",
+      title: {
+        th: "ระบบแดชบอร์ดแผนที่เชิงพื้นที่วิเคราะห์ข้อมูลประชากรทั่วประเทศไทย (Thailand Population Dashboard)",
+        en: "Thailand Nationwide Spatial Population & Demographic Intelligence Dashboard"
+      },
+      badge: {
+        th: "Interactive Web GIS & Demographic Analytics",
+        en: "Interactive Web GIS & Demographic Analytics"
+      },
+      awardBadge: {
+        th: "👥 แผนที่ความหนาแน่นประชากร 77 จังหวัด & เจาะลึก 7 ภูมิภาค (DOPA Census)",
+        en: "👥 77-Province Demographic Heatmap & 7-Region Analytics"
+      },
+      problem: {
+        th: "ข้อมูลสถิติจำนวนประชากร ความหนาแน่น และการกระจายตัวของประชากรชาย-หญิงทั่วประเทศไทยจากสำนักบริหารการทะเบียน (DOPA) มักถูกจัดเก็บในรูปเอกสารตารางสถิติและไฟล์ CSV/Excel ขนาดใหญ่ ทำให้ยากต่อการมองเห็นภาพรวมเชิงพื้นที่ (Spatial Context) การวิเคราะห์เปรียบเทียบสัดส่วนระหว่างภูมิภาค และการจัดอันดับจังหวัดที่มีประชากรหนาแน่นแบบ Real-time และ Interactive",
+        en: "Official census datasets detailing population distribution, gender breakdowns, and regional density from the Department of Provincial Administration (DOPA) are historically published as static tabular spreadsheets. This creates high friction for urban analysts and researchers seeking intuitive spatial GIS insights, demographic ratio comparisons across regions, and dynamic provincial rankings."
+      },
+      solution: {
+        th: "พัฒนาเว็บแอปพลิเคชันแดชบอร์ดแผนที่เชิงพื้นที่ด้วย Leaflet.js, GeoJSON, JavaScript (ES6+) และ jQuery เชื่อมโยงข้อมูลประชากรทางการเข้ากับขอบเขตภูมิศาสตร์ 77 จังหวัดทั่วไทย โดดเด่นด้วยแผนที่ความร้อน (Choropleth Map) 8 ระดับความหนาแน่น, แผง KPI สรุปผลประชากรรวม ชาย-หญิง ทั้งระดับประเทศและ 7 ภูมิภาค, ตาราง Top 5 จังหวัดประชากรสูงสุด, ระบบค้นหาจังหวัดพร้อม Autocomplete และระบบ Auto-pan ซูมเข้าสู่พื้นที่อัตโนมัติ พร้อมการออกแบบ Responsive รองรับทุกขนาดหน้าจอ",
+        en: "Engineered an interactive spatial web analytics dashboard integrating Leaflet.js, GeoJSON geometries, JavaScript (ES6+), and jQuery to contextualize official census data across Thailand's 77 provinces. Features an 8-tier choropleth density heatmap, dynamic nationwide and 7-region demographic KPI cards (Total, Male, Female), Top 5 provincial population leaderboards, live province search with autocomplete & auto-pan focus, and fully responsive mobile-optimized UI controls."
+      },
+      metrics: [
+        { label: { th: "ครอบคลุมพื้นที่", en: "Provinces Covered" }, value: "77 จังหวัด (All Provinces)" },
+        { label: { th: "การจำแนกข้อมูล", en: "Demographic KPIs" }, value: "7 ภูมิภาค (Total/M/F)" },
+        { label: { th: "การวิเคราะห์เชิงพื้นที่", en: "Spatial GIS Engine" }, value: "Choropleth & Top 5" }
+      ],
+      techStack: ["Leaflet.js (GIS)", "GeoJSON", "JavaScript (ES6+)", "jQuery", "Spatial Analytics", "Responsive UI", "Data Pipeline (CSV/JSON)"],
+      links: [
+        {
+          label: { th: "🌐 ดูตัวอย่างผลงานจริง (Live Demo)", en: "🌐 Live Interactive Dashboard" },
+          url: "https://thanchanok-tan-in.github.io/Thailand_Population_Dashboard/",
+          icon: "external-link"
+        },
+        {
+          label: { th: "📂 คลังโปรเจกต์ GitHub (Source Code)", en: "📂 Project Repository (GitHub)" },
+          url: "https://github.com/thanchanok-tan-in/Thailand_Population_Dashboard",
           icon: "code"
         }
       ]
